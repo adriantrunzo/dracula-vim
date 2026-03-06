@@ -1051,6 +1051,19 @@ if has('nvim')
   hi! link MiniIconsRed DraculaRed
   hi! link MiniIconsYellow DraculaYellow
   " }}}
+
+  " nvim-mini/mini.statusline {{{
+  call s:h("MiniStatuslineDevInfo", s:fg, s:bg)
+  call s:h("MiniStatuslineFileInfo", s:fg, s:comment)
+  call s:h("MiniStatuslineFilename", s:fg, s:selection)
+  call s:h("MiniStatuslineInactive", s:fg, s:selection)
+  call s:h("MiniStatuslineModeCommand", s:bg, s:purple)
+  call s:h("MiniStatuslineModeInsert", s:bg, s:green)
+  call s:h("MiniStatuslineModeNormal", s:bg, s:purple)
+  call s:h("MiniStatuslineModeOther", s:bg, s:green)
+  call s:h("MiniStatuslineModeReplace", s:bg, s:orange)
+  call s:h("MiniStatuslineModeVisual", s:bg, s:yellow)
+  " }}}
 endif
 " }}}
 
